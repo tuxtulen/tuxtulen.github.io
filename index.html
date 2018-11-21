@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- MAIN (Center website) -->
+    <div class="main"></div>
+
+    <!-- GALLERY -->
+
+    <div id="btnContainer">
+        <button class="btn active" onclick="filterSelection('all')">
+            Показать все</button>
+        <button class="btn" onclick="filterSelection('human')">
+            Человек</button>
+        <button class="btn" onclick="filterSelection('dwarf')">
+            Гном</button>
+        <button class="btn" onclick="filterSelection('woman')">
+            Женщина</button>
+        <button class="btn" onclick="filterSelection('peasant')">
+            Крестьянин</button>
+        <button class="btn" onclick="filterSelection('elf')">
+            Эльф</button>
+        <button class="btn" onclick="filterSelection('man')">
+            Мужчина</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="row">
+        <div class="column human">
+            <div class="content">
+                <img id="img" src="res/human1.jpg" alt="Mountains"
+                     style="width:100%;">
+                <h4>Human</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column human">
+            <div class="content">
+                <img id="img" src="res/human2.jpg" alt="Lights"
+                     style="width:100%">
+                <h4>Human</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column human">
+            <div class="content">
+                <img id="img" src="res/human3.jpg" alt="Nature"
+                     style="width:100%">
+                <h4>Human</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+
+        <div class="column dwarf">
+            <div class="content">
+                <img id="img" src="res/dwarf1.jpg" alt="Car"
+                     style="width:100%">
+                <h4>Dwarf</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column dwarf">
+            <div class="content">
+                <img id="img" src="res/dwarf2.jpg" alt="Car"
+                     style="width:100%">
+                <h4>Dwarf</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column elf">
+            <div class="content">
+                <img id="img" src="res/elf1.jpg" alt="Car"
+                     style="width:100%">
+                <h4>Elf</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+
+        <div class="column elf">
+            <div class="content">
+                <img id="img" src="res/elf2.jpg" alt="Car"
+                     style="width:100%">
+                <h4>Elf</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column elf">
+            <div class="content">
+                <img id="img" src="res/elf3.jpg" alt="Car"
+                     style="width:100%">
+                <h4>Elf</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column elf">
+            <div class="content">
+                <img id="img" src="res/elf4.jpg" alt="Car"
+                     style="width:100%">
+                <h4>Elf</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <!-- END GRID -->
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+
+    <!-- END MAIN -->
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>
