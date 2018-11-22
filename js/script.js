@@ -3,15 +3,13 @@
  * This part is a simple implementation of zoom effect for image gallery
  * ========================================================================================
  */
-
-// ===========================================================================================
 var images = document.querySelectorAll('#row img'),
     modal = document.querySelector('.modal');
 
 images.forEach(function (image) {
     
     image.addEventListener('click', function(event) {
-        modal.innerHTML = '<div class="modal-content"><img src="' + event.target.src + '"><br><span>' + event.target.alt + '</span></div>';
+        modal.innerHTML = '<span class="close">&times;</span><div class="modal-content"><img src="' + event.target.src + '" onLoad="small()"></div>';
 		modal.style.display = 'block';
 
     });
