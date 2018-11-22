@@ -4,24 +4,22 @@
  * ========================================================================================
  */
 
-var modal = document.getElementById('myModal');
+// ===========================================================================================
+var images = document.querySelectorAll('#row img'),
+    modal = document.querySelector('.modal');
 
-var img = document.getElementById('img');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function () {
-	modal.style.display = "block";
-	modal.style.width = "100%";
-	modal.style.height = "100%";
-	modalImg.src = this.src;
-	captionText.innerHTML = this.alt;
-}
+images.forEach(function (image) {
+    
+    image.addEventListener('click', function(event) {
+        modal.innerHTML = '<div class="modal-content"><img src="' + event.target.src + '"><br><span>' + event.target.alt + '</span></div>';
+		modal.style.display = 'block';
 
-var span = document.getElementsByClassName("close")[0];
+    });
+});
 
-span.onclick = function () {
-	modal.style.display = "none";
-}
+modal.addEventListener('click', function () {
+    this.style.display = 'none';
+});
 
 /**
  * ========================================================================================
